@@ -1,0 +1,84 @@
+{% extends "disease_dection/base.html" %}
+{% block content %}
+
+<div class="layout-content-container flex flex-col max-w-[960px] mx-auto w-full px-4">
+  
+  <!-- Title -->
+  <div class="flex justify-between items-center py-6">
+    <p class="text-[#0e1b0e] text-[32px] font-bold">Detect Crop Disease</p>
+  </div>
+
+  <!-- Crop Type Dropdown -->
+  <div class="w-full max-w-md mb-6">
+    <label class="block">
+      <select
+        name="crop_type"
+        class="w-full h-14 rounded-lg border border-[#d0e7d0] bg-[#f8fcf8] text-[#0e1b0e] p-3 text-base placeholder:text-[#4e974e] focus:outline-none focus:border-[#0e1b0e] transition"
+      >
+        <option value="">Select Crop Type</option>
+        {% for crop in crop_list %}
+        <option value="{{ crop }}">{{ crop }}</option>
+        {% endfor %}
+      </select>
+    </label>
+  </div>
+
+  <!-- Upload Form -->
+  <form method="POST" enctype="multipart/form-data" class="w-full mb-10 px-4 sm:px-6">
+  {% csrf_token %}
+  <div class="flex flex-col items-center gap-5 rounded-lg border-2 border-dashed border-[#d0e7d0] bg-[#f8fcf8] w-full px-6 py-10">
+    
+    <!-- Heading -->
+    <div class="text-center w-full">
+      <p class="text-[#0e1b0e] text-lg font-bold">Upload Image</p>
+      <p class="text-[#0e1b0e] text-sm">Drag and drop an image here, or browse your file system</p>
+    </div>
+
+    <!-- File Input -->
+    <input id="imageInput" type="file" name="image[]" accept="image/*" multiple required class="w-full text-sm file:mr-4 file:py-2 file:px-4
+             file:rounded-lg file:border-0 file:bg-[#e7f3e7] file:text-[#0e1b0e] font-medium
+             hover:file:bg-[#d0e7d0]"
+    />
+
+    <!-- Selected Filename -->
+    <p id="fileNameDisplay" class="text-sm text-[#0e1b0e] text-center font-medium w-full"></p>
+
+    <!-- Upload Button -->
+    <button
+      type="submit"
+      class="w-full sm:w-auto bg-[#e7f3e7] hover:bg-[#d0e7d0] text-[#0e1b0e] font-bold text-sm px-5 py-2 rounded-lg transition"
+    >
+      Upload
+    </button>
+  </div>
+</form>
+
+  <!-- Result Section -->
+  <div class="px-4">
+    <h2 class="text-[#0e1b0e] text-2xl font-bold pb-3">Disease Detection Results</h2>
+    <h1 class="text-[#0e1b0e] text-xl font-bold pb-3">Detected Disease: Early Blight</h1>
+    <p class="text-[#0e1b0e] text-base leading-relaxed pb-3">
+      Early blight is a common fungal disease that affects many plants, especially tomatoes and potatoes. It is characterized by dark lesions on the leaves, which can eventually lead to defoliation and reduced yields.
+    </p>
+
+    <h2 class="text-[#0e1b0e] text-xl font-bold pb-2 pt-4">Treatment and Prevention</h2>
+    <p class="text-[#0e1b0e] text-base leading-relaxed pb-3">
+      To manage early blight, consider using fungicides, ensuring proper plant spacing for good air circulation, and removing infected plant parts promptly. Crop rotation and using disease-resistant varieties can also help prevent future outbreaks.
+    </p>
+  </div>
+</div>
+
+<!-- JavaScript for file name preview -->
+<script>
+  const input = document.getElementById('imageInput');
+  const fileNameDisplay = document.getElementById('fileNameDisplay');
+
+  input.addEventListener('change', () => {
+    const files = Array.from(input.files);
+    fileNameDisplay.innerHTML = files.length > 0
+      ? files.map(file => `• ${file.name}`).join('<br>')
+      : '';
+  });
+</script>
+
+{% endblock %}
