@@ -2,17 +2,17 @@
   "Rice": {
     "Blast": {
       "reason": "Fungus Magnaporthe oryzae",
-      "description": "Spindle‑shaped lesions on leaves, neck and panicle, reduces grain filling.",
+      "description": "Spindle-shaped lesions on leaves, neck and panicle, reduces grain filling.",
       "suggestion": "Apply Tricyclazole or use resistant varieties; avoid high humidity circles." 
     },
     "Bacterial_leaf_blight": {
       "reason": "Bacterium Xanthomonas oryzae pv. oryzae",
       "description": "Wilting and drying of leaf tips; yellow streaks expand along leaf margins.",
-      "suggestion": "Use copper‑based sprays or seed treatment with Streptocycline."
+      "suggestion": "Use copper-based sprays or seed treatment with Streptocycline."
     },
     "Sheath_blight": {
       "reason": "Fungus Rhizoctonia solani",
-      "description": "Water‑soaked lesions on leaf sheaths near water line.",
+      "description": "Water-soaked lesions on leaf sheaths near water line.",
       "suggestion": "Spray Validamycin or apply neem cake compost."
     },
     "Tungro": {
@@ -45,7 +45,7 @@
     "Powdery_mildew": {
       "reason": "Fungus Erysiphe graminis f. tritici",
       "description": "White powdery growth on leaf surfaces.",
-      "suggestion": "Spray Sulphur or bio‑fungicide Bacillus subtilis."
+      "suggestion": "Spray Sulphur or bio-fungicide Bacillus subtilis."
     },
     "Loose_smut": {
       "reason": "Fungus Ustilago tritici",
@@ -57,12 +57,12 @@
     "Northern_leaf_blight": {
       "reason": "Fungus Exserohilum turcicum",
       "description": "Long tan lesions with dark borders on leaves.",
-      "suggestion": "Apply Azoxystrobin or rotate with non‑host crops."
+      "suggestion": "Apply Azoxystrobin or rotate with non-host crops."
     },
     "Downy_mildew": {
       "reason": "Oomycete Peronosclerospora sorghi",
       "description": "White/gray mold on leaf undersides; stunted plants.",
-      "suggestion": "Use metal‑based sprays and remove volunteer maize."
+      "suggestion": "Use metal-based sprays and remove volunteer maize."
     },
     "Maize_mosaic_virus": {
       "reason": "Viral disease vectored by leafhopper",
@@ -77,24 +77,24 @@
     "Charcoal_rot": {
       "reason": "Fungus Macrophomina phaseolina",
       "description": "Grey-brown lesions at stem base; ashy-black interior.",
-      "suggestion": "Soil solarization or apply Trichoderma‑based biofungicide."
+      "suggestion": "Soil solarization or apply Trichoderma-based biofungicide."
     }
   },
   "Potato": {
     "Late_blight": {
       "reason": "Oomycete Phytophthora infestans",
-      "description": "Water‑soaked lesions on leaves/stems; tuber rot.",
+      "description": "Water-soaked lesions on leaves/stems; tuber rot.",
       "suggestion": "Spray metalaxyl + mancozeb; remove infected foliage."
     },
     "Early_blight": {
       "reason": "Fungus Alternaria solani",
-      "description": "Target‑like lesions on leaves; premature leaf drop.",
+      "description": "Target-like lesions on leaves; premature leaf drop.",
       "suggestion": "Apply chlorothalonil or organic compost tea with garlic."
     },
     "Potato_leafroll_virus": {
       "reason": "Virus PLRV transmitted by aphids",
       "description": "Leaf rolling, net necrosis in tubers, stunting.",
-      "suggestion": "Use virus‑free seed; control aphids; rogue infected plants."
+      "suggestion": "Use virus-free seed; control aphids; rogue infected plants."
     },
     "Black_scab": {
       "reason": "Bacterium Streptomyces scabies",
@@ -115,30 +115,30 @@
     },
     "Late_blight": {
       "reason": "Oomycete Phytophthora infestans",
-      "description": "Water‑soaked lesions; white mold under leaves.",
+      "description": "Water-soaked lesions; white mold under leaves.",
       "suggestion": "Copper fungicides or copper oxychloride spray."
     },
     "Bacterial_canker": {
       "reason": "Bacterium Clavibacter michiganensis",
-      "description": "Wilting, cankers on stems, bird’s‑eye spots on fruit.",
-      "suggestion": "Use disease‑free seeds; apply copper sprays."
+      "description": "Wilting, cankers on stems, bird's-eye spots on fruit.",
+      "suggestion": "Use disease-free seeds; apply copper sprays."
     },
     "Tomato_leaf_curl_virus": {
       "reason": "Virus vectored by whitefly",
       "description": "Leaf curling, thickened veins, stunted growth.",
-      "suggestion": "Control whitefly; plant virus‑resistant varieties."
+      "suggestion": "Control whitefly; plant virus-resistant varieties."
     },
     "Bacterial_spot": {
       "reason": "Bacterium Xanthomonas vesicatoria",
-      "description": "Dark, water‑soaked lesions on leaves/fruit.",
-      "suggestion": "Copper‑based sprays; remove volunteer plants."
+      "description": "Dark, water-soaked lesions on leaves/fruit.",
+      "suggestion": "Copper-based sprays; remove volunteer plants."
     }
   },
   "Cotton": {
     "Verticillium_wilt": {
       "reason": "Fungus Verticillium dahliae",
       "description": "Yellowing, wilting; vascular browning.",
-      "suggestion": "Crop rotation, deep ploughing, chloropicrin soil fumigation." :contentReference[oaicite:4]{index=4}
+      "suggestion": "Crop rotation, deep ploughing, chloropicrin soil fumigation."
     },
     "Anthracnose": {
       "reason": "Fungus Colletotrichum spp.",
@@ -148,16 +148,16 @@
     "Angular_leaf_spot": {
       "reason": "Bacterium Xanthomonas malvacearum",
       "description": "Angular lesions on leaves; defoliation.",
-      "suggestion": "Copper sprays; use disease‑free seed." :contentReference[oaicite:5]{index=5}
+      "suggestion": "Copper sprays; use disease-free seed."
     },
     "Fusarium_wilt": {
       "reason": "Fungus Fusarium oxysporum",
-      "description": "Yellowing of lower leaves; vascular wilt." :contentReference[oaicite:6]{index=6}
+      "description": "Yellowing of lower leaves; vascular wilt.",
       "suggestion": "Soil solarization, resistant cultivars, biofungicide."
     },
     "Bacterial_blight": {
       "reason": "Bacterium Xanthomonas citri",
-      "description": "Water‑soaked spots that become angular and necrotic.",
+      "description": "Water-soaked spots that become angular and necrotic.",
       "suggestion": "Copper sprays; remove infected debris."
     }
   },
@@ -165,107 +165,107 @@
     "Citrus_canker": {
       "reason": "Bacterium Xanthomonas axonopodis",
       "description": "Raised lesions with oily margins on leaves/fruit.",
-      "suggestion": "Copper bactericide; quarantine and removal." :contentReference[oaicite:7]{index=7}
+      "suggestion": "Copper bactericide; quarantine and removal."
     },
     "Citrus_greening": {
       "reason": "Bacterium Candidatus Liberibacter; vector psyllid",
-      "description": "Mottled leaves, misshapen bitter fruit." :contentReference[oaicite:8]{index=8}
-      "suggestion": "Control psyllids; remove infected trees; use disease‑free seedlings."
+      "description": "Mottled leaves, misshapen bitter fruit.",
+      "suggestion": "Control psyllids; remove infected trees; use disease-free seedlings."
     },
     "Brown_rot": {
       "reason": "Oomycete Phytophthora citrophthora",
-      "description": "Gummosis on trunk; brown rot of fruit." :contentReference[oaicite:9]{index=9}
-      "suggestion": "Use resistant rootstock; copper fungicide Fosetyl‑Al."
+      "description": "Gummosis on trunk; brown rot of fruit.",
+      "suggestion": "Use resistant rootstock; copper fungicide Fosetyl-Al."
     },
     "Black_spot": {
       "reason": "Fungus Guignardia citricarpa",
-      "description": "Black lesions on fruit rind."
+      "description": "Black lesions on fruit rind.",
       "suggestion": "Apply copper sprays; remove dropped fruit."
     },
     "Citrus_nematode": {
       "reason": "Nematode Tylenchulus semipenetrans",
-      "description": "Root damage; stunted, yellowed trees." :contentReference[oaicite:10]{index=10}
+      "description": "Root damage; stunted, yellowed trees.",
       "suggestion": "Use nematicide; clean planting material; increase organic matter."
     }
   },
   "Banana": {
     "Black_sigatoka": {
       "reason": "Fungus Mycosphaerella fijiensis",
-      "description": "Black streaks leads to leaf necrosis." :contentReference[oaicite:11]{index=11}
+      "description": "Black streaks leads to leaf necrosis.",
       "suggestion": "Frequent fungicide spray; remove affected leaves."
     },
     "Panama_disease": {
       "reason": "Fungus Fusarium oxysporum f. sp. cubense",
-      "description": "Yellowing and wilting; vascular discoloration."
+      "description": "Yellowing and wilting; vascular discoloration.",
       "suggestion": "Use resistant cultivars; soil biofumigation."
     },
     "Bunchy_top": {
-      "reason": "Virus vectored by aphids"; 
-      "description": "Stunted growth, clustered leaves." :contentReference[oaicite:12]{index=12}
-      "suggestion": "Use virus‑free suckers; eliminate aphids."
+      "reason": "Virus vectored by aphids",
+      "description": "Stunted growth, clustered leaves.",
+      "suggestion": "Use virus-free suckers; eliminate aphids."
     },
     "Black_head_nematode": {
       "reason": "Radopholus similis",
-      "description": "Root lesions, plant stunting." :contentReference[oaicite:13]{index=13}
+      "description": "Root lesions, plant stunting.",
       "suggestion": "Soil fumigation or organic mulches."
     },
     "Moko_disease": {
       "reason": "Bacterium Ralstonia solanacearum",
-      "description": "Wilting, vascular browning." :contentReference[oaicite:14]{index=14}
-      "suggestion": "Sanitation; rotate with non‑host crops."
+      "description": "Wilting, vascular browning.",
+      "suggestion": "Sanitation; rotate with non-host crops."
     }
   },
   "Apple": {
     "Apple_scab": {
       "reason": "Fungus Venturia inaequalis",
-      "description": "Olive‑green to black scab lesions on fruit and leaves." :contentReference[oaicite:15]{index=15}
+      "description": "Olive-green to black scab lesions on fruit and leaves.",
       "suggestion": "Spray Mancozeb or use resistant varieties."
     },
     "Fire_blight": {
       "reason": "Bacterium Erwinia amylovora",
-      "description": "Blackened shoots; “shepherd’s crook” symptom." :contentReference[oaicite:16]{index=16}
+      "description": "Blackened shoots; “shepherd's crook” symptom.",
       "suggestion": "Prune infected branches; copper sprays."
     },
     "Powdery_mildew": {
       "reason": "Fungus Podosphaera leucotricha",
-      "description": "White powdery growth on leaves, fruit."
+      "description": "White powdery growth on leaves, fruit.",
       "suggestion": "Sulphur spray or Bacillus subtilis."
     },
     "Crown_rot": {
       "reason": "Oomycete Phytophthora cactorum",
-      "description": "Collar lesions and root decay." :contentReference[oaicite:17]{index=17}
+      "description": "Collar lesions and root decay.",
       "suggestion": "Improve drainage; apply phosphonates."
     },
     "Apple_rust": {
       "reason": "Fungus Gymnosporangium spp.",
-      "description": "Orange rust pustules on leaves." 
+      "description": "Orange rust pustules on leaves.",
       "suggestion": "Remove juniper alternate hosts; apply myclobutanil."
     }
   },
   "Mango": {
     "Anthracnose": {
       "reason": "Fungus Colletotrichum gloeosporioides",
-      "description": "Leaf spots, blossom blight, fruit rot." :contentReference[oaicite:18]{index=18}
+      "description": "Leaf spots, blossom blight, fruit rot.",
       "suggestion": "Spray Carbendazim; apply biocontrol Azotobacter."
     },
     "Powdery_mildew": {
       "reason": "Fungus Oidium mangiferae",
-      "description": "White powder on young leaves and panicles." :contentReference[oaicite:19]{index=19}
+      "description": "White powder on young leaves and panicles.",
       "suggestion": "Sulphur spray; prune infected tissue."
     },
     "Malformation": {
       "reason": "Fusarium moniliforme + mites",
-      "description": "Bunchy top, floral malformation." :contentReference[oaicite:20]{index=20}
+      "description": "Bunchy top, floral malformation.",
       "suggestion": "Prune malformed shoots; mites control; fungicide."
     },
     "Stem_end_rot": {
       "reason": "Fungus Lasiodiplodia theobromae",
-      "description": "Black rot at fruit stem end." 
-      "suggestion": "Pre‑harvest Carbendazim spray; improve ventilation."
+      "description": "Black rot at fruit stem end.",
+      "suggestion": "Pre-harvest Carbendazim spray; improve ventilation."
     },
     "Fruit_burst": {
       "reason": "Physiological + environmental stress",
-      "description": "Cracks/splits in fruit surface." 
+      "description": "Cracks/splits in fruit surface.", 
       "suggestion": "Maintain irrigation; apply calcium sprays."
     }
   }
