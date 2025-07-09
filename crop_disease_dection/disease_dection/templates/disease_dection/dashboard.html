@@ -7,51 +7,53 @@
   <div class="flex justify-between items-center py-6">
     <p class="text-[#0e1b0e] text-[32px] font-bold">Detect Crop Disease</p>
   </div>
-
-  <!-- Crop Type Dropdown -->
-  <div class="w-full max-w-md mb-6">
-    <label class="block">
-      <select
-        name="crop_type"
-        class="w-full h-14 rounded-lg border border-[#d0e7d0] bg-[#f8fcf8] text-[#0e1b0e] p-3 text-base placeholder:text-[#4e974e] focus:outline-none focus:border-[#0e1b0e] transition"
-      >
-        <option value="">Select Crop Type</option>
-        {% for crop in crop_list %}
-        <option value="{{ crop }}">{{ crop }}</option>
-        {% endfor %}
-      </select>
-    </label>
+{% if error %}
+  <div class="bg-red-100 text-red-700 p-3 rounded mb-4">
+    {{ error }}
   </div>
-
+{% endif %}
   <!-- Upload Form -->
   <form action="{% url 'predict_disease' %}" method="POST" enctype="multipart/form-data" class="w-full mb-10 px-4 sm:px-6">
-  {% csrf_token %}
-  <div class="flex flex-col items-center gap-5 rounded-lg border-2 border-dashed border-[#d0e7d0] bg-[#f8fcf8] w-full px-6 py-10">
-    
-    <!-- Heading -->
-    <div class="text-center w-full">
-      <p class="text-[#0e1b0e] text-lg font-bold">Upload Image</p>
-      <p class="text-[#0e1b0e] text-sm">Drag and drop an image here, or browse your file system</p>
+    {% csrf_token %}
+
+    <!-- Crop Type Dropdown -->
+    <div class="w-full max-w-md mb-6">
+      <label class="block">
+        <select
+          name="crop"
+          class="w-full h-14 rounded-lg border border-[#d0e7d0] bg-[#f8fcf8] text-[#0e1b0e] p-3 text-base placeholder:text-[#4e974e] focus:outline-none focus:border-[#0e1b0e] transition"
+          required
+        >
+          <option value="">Select Crop Type</option>
+          {% for crop in crop_list %}
+          <option value="{{ crop }}">{{ crop }}</option>
+          {% endfor %}
+        </select>
+      </label>
     </div>
 
-    <!-- File Input -->
-    <input id="imageInput" type="file" name="image[]" accept="image/*" multiple required class="w-full text-sm file:mr-4 file:py-2 file:px-4
-             file:rounded-lg file:border-0 file:bg-[#e7f3e7] file:text-[#0e1b0e] font-medium
-             hover:file:bg-[#d0e7d0]"
-    />
+    <div class="flex flex-col items-center gap-5 rounded-lg border-2 border-dashed border-[#d0e7d0] bg-[#f8fcf8] w-full px-6 py-10">
+      
+      <!-- Heading -->
+      <div class="text-center w-full">
+        <p class="text-[#0e1b0e] text-lg font-bold">Upload Image</p>
+        <p class="text-[#0e1b0e] text-sm">Drag and drop an image here, or browse your file system</p>
+      </div>
 
-    <!-- Selected Filename -->
-    <p id="fileNameDisplay" class="text-sm text-[#0e1b0e] text-center font-medium w-full"></p>
+      <!-- File Input -->
+      <input id="imageInput" type="file" name="image" accept="image/*" required
+             class="w-full text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-[#e7f3e7] file:text-[#0e1b0e] font-medium hover:file:bg-[#d0e7d0]" />
 
-    <!-- Upload Button -->
-    <button
-      type="submit"
-      class="w-full sm:w-auto bg-[#e7f3e7] hover:bg-[#d0e7d0] text-[#0e1b0e] font-bold text-sm px-5 py-2 rounded-lg transition"
-    >
-      Upload
-    </button>
-  </div>
-</form>
+      <!-- Selected Filename -->
+      <p id="fileNameDisplay" class="text-sm text-[#0e1b0e] text-center font-medium w-full"></p>
+
+      <!-- Upload Button -->
+      <button type="submit"
+              class="w-full sm:w-auto bg-[#e7f3e7] hover:bg-[#d0e7d0] text-[#0e1b0e] font-bold text-sm px-5 py-2 rounded-lg transition">
+        Upload
+      </button>
+    </div>
+  </form>
 </div>
 
 <!-- JavaScript for file name preview -->

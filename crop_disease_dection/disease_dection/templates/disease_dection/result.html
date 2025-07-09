@@ -1,9 +1,26 @@
 {% extends "disease_dection/base.html" %}
 {% block content %}
-<h2>Prediction Result</h2>
-<p><strong>Crop:</strong> {{ predicted_crop }}</p>
-<p><strong>Disease:</strong> {{ predicted_disease }}</p>
-<p><strong>Reason:</strong> {{ reason }}</p>
-<p><strong>Description:</strong> {{ description }}</p>
-<p><strong>Suggestion:</strong> {{ suggestion }}</p>
+<div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md border border-gray-200">
+
+    <!-- Back Button at Top -->
+    <div class="mb-6">
+        <a href="{% url 'dashboard' %}" class="inline-block px-4 py-2 bg-green-700 hover:bg-green-800 text-white font-medium rounded-lg transition duration-200">
+            ←
+        </a>
+    </div>
+
+    <h2 class="text-green-800 text-3xl font-semibold mb-6 border-b pb-2">Prediction Result</h2>
+
+    <div class="space-y-4 text-gray-800 text-base">
+        <p><span class="font-semibold text-green-900">Crop:</span> {{ predicted_crop }}</p>
+        <p><span class="font-semibold text-green-900">Disease:</span> {{ predicted_disease }}</p>
+        <p><span class="font-semibold text-green-900">Reason:</span> {{ reason }}</p>
+        <p><span class="font-semibold text-green-900">Description:</span> {{ description }}</p>
+        <p><span class="font-semibold text-green-900">Suggestion:</span> {{ suggestion }}</p>
+    </div>
+</div>
+<div class="w-full md:w-1/3">
+    <h3 class="text-lg font-semibold mb-2">Uploaded Image</h3>
+    <img src="{{ image_url }}" alt="Uploaded Crop Image" class="rounded-lg shadow-md max-w-full h-auto">
+</div>
 {% endblock %}
