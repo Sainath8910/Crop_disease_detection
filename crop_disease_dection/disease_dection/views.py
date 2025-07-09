@@ -1,15 +1,14 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.files.storage import default_storage
+import uuid
 import os
 import json
 import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
-import uuid
 import threading
 
-# ------------------- Load Model and Labels Once -------------------
 
 MODEL_PATH = os.path.join(settings.BASE_DIR, 'disease_dection', 'models', 'crop_disease_model.h5')
 model = load_model(MODEL_PATH)
@@ -20,7 +19,6 @@ with open(LABELS_PATH, 'r') as f:
     label_map = {v: k for k, v in class_indices.items()}
 
 
-# ------------------- Dashboard View -------------------
 
 def first_view(request):
     """
@@ -38,7 +36,6 @@ def first_view(request):
     return render(request, 'disease_dection/dashboard.html', {'crop_list': crop_list})
 
 
-# ------------------- Prediction View -------------------
 
 def predict_disease_view(request):
     """
@@ -52,7 +49,7 @@ def predict_disease_view(request):
         try:
             # Load and preprocess the image
             img = Image.open(img_file).convert('RGB')
-            img = img.resize((128, 128))  # Must match model input size
+            img = img.resize((128, 128))
             img_array = np.array(img) / 255.0
             img_array = np.expand_dims(img_array, axis=0)
 
