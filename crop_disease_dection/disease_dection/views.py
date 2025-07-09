@@ -6,6 +6,7 @@ import json
 import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
+import uuid
 
 # ------------------- Load Model and Labels Once -------------------
 
@@ -74,7 +75,8 @@ def predict_disease_view(request):
             disease_info = disease_data.get(predicted_crop, {}).get(predicted_disease, {})
 
             # Save uploaded image temporarily
-            saved_path = default_storage.save('temp_uploaded_image.jpg', img_file)
+            unique_filename = f"{uuid.uuid4()}.jpg"
+            saved_path = default_storage.save(os.path.join('uploads', unique_filename), img_file)
             image_url = default_storage.url(saved_path)
 
             return render(request, 'disease_dection/result.html', {
