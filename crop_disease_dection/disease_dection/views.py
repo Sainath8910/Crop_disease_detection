@@ -2,6 +2,7 @@ from django.shortcuts import render
 import json
 from django.conf import settings
 import os
+from tensorflow.keras.models import load_model
 
 def first_view(request):
     """
