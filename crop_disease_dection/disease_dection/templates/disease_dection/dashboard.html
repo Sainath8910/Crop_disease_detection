@@ -24,7 +24,7 @@
   </div>
 
   <!-- Upload Form -->
-  <form method="POST" enctype="multipart/form-data" class="w-full mb-10 px-4 sm:px-6">
+  <form action="{% url 'predict_disease' %}" method="POST" enctype="multipart/form-data" class="w-full mb-10 px-4 sm:px-6">
   {% csrf_token %}
   <div class="flex flex-col items-center gap-5 rounded-lg border-2 border-dashed border-[#d0e7d0] bg-[#f8fcf8] w-full px-6 py-10">
     
@@ -52,20 +52,6 @@
     </button>
   </div>
 </form>
-
-  <!-- Result Section -->
-  <div class="px-4">
-    <h2 class="text-[#0e1b0e] text-2xl font-bold pb-3">Disease Detection Results</h2>
-    <h1 class="text-[#0e1b0e] text-xl font-bold pb-3">Detected Disease: Early Blight</h1>
-    <p class="text-[#0e1b0e] text-base leading-relaxed pb-3">
-      Early blight is a common fungal disease that affects many plants, especially tomatoes and potatoes. It is characterized by dark lesions on the leaves, which can eventually lead to defoliation and reduced yields.
-    </p>
-
-    <h2 class="text-[#0e1b0e] text-xl font-bold pb-2 pt-4">Treatment and Prevention</h2>
-    <p class="text-[#0e1b0e] text-base leading-relaxed pb-3">
-      To manage early blight, consider using fungicides, ensuring proper plant spacing for good air circulation, and removing infected plant parts promptly. Crop rotation and using disease-resistant varieties can also help prevent future outbreaks.
-    </p>
-  </div>
 </div>
 
 <!-- JavaScript for file name preview -->

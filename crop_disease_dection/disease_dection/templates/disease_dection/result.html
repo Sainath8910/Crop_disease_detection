@@ -1,0 +1,9 @@
+{% extends "disease_dection/base.html" %}
+{% block content %}
+<h2>Prediction Result</h2>
+<p><strong>Crop:</strong> {{ predicted_crop }}</p>
+<p><strong>Disease:</strong> {{ predicted_disease }}</p>
+<p><strong>Reason:</strong> {{ reason }}</p>
+<p><strong>Description:</strong> {{ description }}</p>
+<p><strong>Suggestion:</strong> {{ suggestion }}</p>
+{% endblock %}
