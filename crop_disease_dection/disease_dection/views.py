@@ -7,6 +7,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
 import uuid
+import threading
 
 # ------------------- Load Model and Labels Once -------------------
 
@@ -79,6 +80,12 @@ def predict_disease_view(request):
             saved_path = default_storage.save(os.path.join('uploads', unique_filename), img_file)
             image_url = default_storage.url(saved_path)
 
+            # Schedule automatic deletion after 60 seconds
+            def delete_temp_file(path):
+                if default_storage.exists(path):
+                    default_storage.delete(path)
+
+            threading.Timer(60.0, delete_temp_file, args=[saved_path]).start()
             return render(request, 'disease_dection/result.html', {
                 'predicted_crop': predicted_crop,
                 'predicted_disease': disease_info.get('name', 'N/A'),
