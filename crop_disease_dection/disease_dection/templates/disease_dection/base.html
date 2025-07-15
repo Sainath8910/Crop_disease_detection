@@ -43,13 +43,12 @@
             <div class="flex items-center gap-9">
               <a class="text-[#0e1b0e] text-sm font-medium leading-normal" href="{% url 'dashboard' %}">Home</a>
               <a class="text-[#0e1b0e] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#0e1b0e] text-sm font-medium leading-normal" href="{% url 'community' %}">Community</a>
               <a class="text-[#0e1b0e] text-sm font-medium leading-normal" href="#">Contact</a>
             </div>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
             {% block content %}{% endblock %}
-        </div>
       </div>
     </div>
   </body>

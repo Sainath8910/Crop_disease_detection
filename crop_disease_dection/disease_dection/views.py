@@ -101,3 +101,15 @@ def predict_disease_view(request):
     return render(request, 'disease_dection/dashboard.html', {
         'error': 'Please upload an image and select a crop.'
     })
+
+def community(request):
+    categories = [
+        {'name': 'All', 'active': True},
+        {'name': 'Wheat', 'active': False},
+        {'name': 'Corn', 'active': False},
+        {'name': 'Soybean', 'active': False},
+    ]
+    return render(request, 'disease_dection/community.html', {'categories': categories})
+
+def post(request):
+    return render(request,'disease_dection/post.html')

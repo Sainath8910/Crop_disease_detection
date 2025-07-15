@@ -1,0 +1,133 @@
+{% extends "disease_dection/base.html" %}
+{% block content %}
+<div class="sticky top-0 z-50 bg-[#f8fcf8] px-4 pt-4">
+  <a href="{% url 'community' %}" class="inline-flex items-center gap-2 px-4 py-2 bg-[#4e974e] hover:bg-[#3e7d3e] text-white text-sm font-medium rounded-full transition duration-200 shadow-md">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+</div>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fcf8] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="flex flex-1 justify-center py-5 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+            <div class="layout-content-container flex flex-col w-full max-w-[960px]">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#0e1b0e] tracking-light text-[32px] font-bold leading-tight min-w-72">Identifying Early Signs of Wheat Rust</p>
+            </div>
+            <p class="text-[#0e1b0e] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Wheat rust is a devastating fungal disease that can significantly reduce crop yields. Early detection is crucial for effective management. This article provides a
+              comprehensive guide to identifying the initial symptoms of wheat rust, enabling timely intervention and minimizing potential damage.
+            </p>
+            <h2 class="text-[#0e1b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Symptoms</h2>
+            <p class="text-[#0e1b0e] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              The first signs of wheat rust often appear as small, orange or reddish-brown pustules on the leaves and stems of the wheat plant. These pustules may be surrounded by
+              a yellow halo and can easily be rubbed off. As the disease progresses, the pustules may merge, forming larger lesions that can cover significant portions of the
+              plant. Severe infections can lead to stunted growth, reduced grain fill, and ultimately, significant yield losses.
+            </p>
+            <div class="flex w-full grow bg-[#f8fcf8] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8fcf8] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgkxj8UnkEJNZKsjvYjlbjjIwlxkGzhKBdv1fVBAmXdWwvGW6Oyq4RfrjbTvUki4NOF-IvHzGsclj6UsXCwxLAeDk4zXLPRtGQvBUfKvlxbNgZjoGlzNNvpJ9fWU3v_e1i-Ukdi_Dq4pM-3ShVSKRo05QphXpPnYnsxkni4CTQPpuUjs39LKZiG2bl_4WRMVs8Pqr-YFgZqy6_0zae-80X7ctP9hE6atCxLltqHr9IipLRItSlbPe29nBLGFzLVFw6Hqvrdx7BPbs");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-[#0e1b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Management Strategies</h2>
+            <p class="text-[#0e1b0e] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Effective management of wheat rust involves a combination of cultural practices, resistant varieties, and fungicide applications. Cultural practices include crop
+              rotation, timely planting, and proper fertilization to promote healthy plant growth. Planting resistant wheat varieties can significantly reduce the risk of
+              infection. In cases of severe outbreaks, fungicide applications may be necessary to control the disease and protect yields. Regular monitoring of wheat fields is
+              essential for early detection and timely implementation of management strategies.
+            </p>
+        <!--Comments Section-->
+            <h2 class="text-[#0e1b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Comments</h2>
+            <div class="flex items-center px-4 py-3 gap-3 @container">
+              <label class="flex flex-col min-w-40 h-full flex-1">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div class="flex border border-[#d0e7d0] bg-[#f8fcf8] justify-end pl-[15px] pr-[15px] pt-[15px] rounded-l-xl border-r-0">
+                    <div
+                      class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC462e06Y7WhXDyztahMa49KyurrbT47k681yc7-x5KQ-Eudp4kTp3hjvnnoNlVMG-MSMbuJBhuComlDcgY6LxA2Mdqrwcv40ued2s-kWK5bq94X-j6C_z6w2sDDmgyg4mkasveFW_egQoxI9HI3pFLrrD3HHifoPVoaWH4X8OYQcBdHkVoI3qa-Pl1fCz9GJ6zLbL5TUiRtxSxyg3CaJ16WAXdUSQtaNt2mnOtDVchCp9sFOULIIuUKo-BvS1maWYp_oHVeBb-Ghk");'
+                    ></div>
+                  </div>
+                  <div class="flex flex-1 flex-col">
+                    <textarea
+                      placeholder="Add a comment..."
+                      class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e1b0e] focus:outline-0 focus:ring-0 border border-[#d0e7d0] bg-[#f8fcf8] focus:border-[#d0e7d0] h-auto placeholder:text-[#aed5ae] rounded-l-none border-l-0 pl-2 rounded-b-none border-b-0 text-base font-normal leading-normal pt-[22px]"
+                    ></textarea>
+                    <div class="flex border border-[#d0e7d0] bg-[#f8fcf8] justify-end pr-[15px] rounded-br-xl border-l-0 border-t-0 px-[15px] pb-[15px]">
+                      <div class="flex items-center gap-4 justify-end">
+                        <button
+                          class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#14b714] text-[#f8fcf8] text-sm font-medium leading-normal hidden @[480px]:block"
+                        >
+                          <span class="truncate">Post</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="flex w-full flex-row items-start justify-start gap-3 p-4">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMJgzItpo7luu0TykfeACvhxat1-0Cv5ET9jLTPCkeu-tGNjK3E_a8QdiNR8XuBbAQQtYvcSX-0w-9pBdJerBoUka1wkmEsv_yBg5Yptct4Eu90vn_VA_2rwb5JV4odYWHpsdS5-HEerJwWvdVAa8MZGv6Zm7RDLLK3W3zQIOk8ILxEgsHHsPND8emP-MnaZqtNuuRG_FT2scRS7mGPfgZ7fwaT_OYCqaU81VVizv38UTgwZB15krUrFpWsdDjFJzdw_EPW_CMRV4");'
+              ></div>
+              <div class="flex h-full flex-1 flex-col items-start justify-start">
+                <div class="flex w-full flex-row items-start justify-start gap-x-3">
+                  <p class="text-[#0e1b0e] text-sm font-bold leading-normal tracking-[0.015em]">Sarah Miller</p>
+                  <p class="text-[#4e974e] text-sm font-normal leading-normal">2 days ago</p>
+                </div>
+                <p class="text-[#0e1b0e] text-sm font-normal leading-normal">
+                  This article was incredibly helpful! I was able to identify early signs of wheat rust in my field thanks to the detailed descriptions and images.
+                </p>
+              </div>
+            </div>
+            <div class="flex w-full flex-row items-start justify-start gap-3 p-4">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGVYpBwZDo_aepH18NczwK5w1ySPlHLeC0rKhyHSXx6khQy_OSghfYAolfgCrBqI9O1iWhs-M1tYsBzQl1uh5z9vIOM3nxFfyQHJ1H1wHjeHbpbC1FzyqvnZhbsfBufOaIgqusRdF9usWcMmDZkd_6kcsoNib06yJXDEPC7ZWD-KwqbglKT8zD_sKbcO-NSy2WUd5jB6duSLvo2kvKQeqtDqBC0laLXUEo1P5BIEqAKFAA4N16wJN7LNxIe5mkyOd_THRs5ZB4IzM");'
+              ></div>
+              <div class="flex h-full flex-1 flex-col items-start justify-start">
+                <div class="flex w-full flex-row items-start justify-start gap-x-3">
+                  <p class="text-[#0e1b0e] text-sm font-bold leading-normal tracking-[0.015em]">David Chen</p>
+                  <p class="text-[#4e974e] text-sm font-normal leading-normal">1 week ago</p>
+                </div>
+                <p class="text-[#0e1b0e] text-sm font-normal leading-normal">
+                  Great information. I'm curious about the specific types of fungicides recommended for wheat rust. Can anyone share their experiences?
+                </p>
+              </div>
+            </div>
+            <div class="flex w-full flex-row items-start justify-start gap-3 p-4 pl-[68px]">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiVknf7Qk2PHnvLFtRGIPXPfOOSwm7LLJ1LgSB3q55hKILX2XrJJLFrAla1k8LBSMKgbN1mktA08g-FLXcDzfR8ZLc6UEMZ5srpdrcKCU5ZsBSE1eJpVoTP2lVakPF8Dl2Y8tyw4-uTZSg9DhityGyzoSUVZ4TIKNswpnbryNzzgX7UnzvC8qR9p39pHXVrPQ39NksF4gyKcbzF6ZjJRUWrHDmOekpfCTLFc1gj2U--rlQ3y6EHBO4-1IC5SLE10vdFVq7-ZelJT4");'
+              ></div>
+              <div class="flex h-full flex-1 flex-col items-start justify-start">
+                <div class="flex w-full flex-row items-start justify-start gap-x-3">
+                  <p class="text-[#0e1b0e] text-sm font-bold leading-normal tracking-[0.015em]">Emily Rodriguez</p>
+                  <p class="text-[#4e974e] text-sm font-normal leading-normal">3 days ago</p>
+                </div>
+                <p class="text-[#0e1b0e] text-sm font-normal leading-normal">
+                  David, I've had success with products containing propiconazole. Always follow label instructions carefully.
+                </p>
+                <div class="flex w-full flex-row items-center justify-start gap-9 pt-2">
+                  <div class="flex items-center gap-2">
+                    <div class="text-[#4e974e]" data-icon="ThumbsUp" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#4e974e] text-sm font-normal leading-normal">2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
