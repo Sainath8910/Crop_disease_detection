@@ -22,18 +22,9 @@ with open(LABELS_PATH, 'r') as f:
 
 def first_view(request):
     """
-    Loads crop names from a JSON file and renders the dashboard.
+    Loads the dashboard.
     """
-    try:
-        file_path = os.path.join(settings.BASE_DIR, 'disease_dection', 'data.json')
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        crop_list = list(data.keys())
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        crop_list = []
-        print(f"Error loading JSON: {e}")
-
-    return render(request, 'disease_dection/dashboard.html', {'crop_list': crop_list})
+    return render(request, 'disease_dection/dashboard.html')
 
 
 
@@ -42,9 +33,8 @@ def predict_disease_view(request):
     Handles image upload, runs prediction using the ML model,
     and displays crop disease information.
     """
-    if request.method == 'POST' and request.FILES.get('image') and request.POST.get('crop'):
+    if request.method == 'POST' and request.FILES.get('image'):
         img_file = request.FILES['image']
-        crop_type = request.POST.get('crop')
 
         try:
             # Load and preprocess the image

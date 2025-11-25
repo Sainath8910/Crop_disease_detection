@@ -16,22 +16,6 @@
   <form action="{% url 'predict_disease' %}" method="POST" enctype="multipart/form-data" class="w-full mb-10 px-4 sm:px-6">
     {% csrf_token %}
 
-    <!-- Crop Type Dropdown -->
-    <div class="w-full max-w-md mb-6">
-      <label class="block">
-        <select
-          name="crop"
-          class="w-full h-14 rounded-lg border border-[#d0e7d0] bg-[#f8fcf8] text-[#0e1b0e] p-3 text-base placeholder:text-[#4e974e] focus:outline-none focus:border-[#0e1b0e] transition"
-          required
-        >
-          <option value="">Select Crop Type</option>
-          {% for crop in crop_list %}
-          <option value="{{ crop }}">{{ crop }}</option>
-          {% endfor %}
-        </select>
-      </label>
-    </div>
-
     <div class="flex flex-col items-center gap-5 rounded-lg border-2 border-dashed border-[#d0e7d0] bg-[#f8fcf8] w-full px-6 py-10">
       
       <!-- Heading -->
